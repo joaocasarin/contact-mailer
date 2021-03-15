@@ -30,9 +30,7 @@ module.exports = class ContactMailer {
                 ${message}`,
             }
     
-            await transport.sendMail(emailDetails, (err, result)=>{
-                if(err) return res.send({ message: err });
-            });
+            await transport.sendMail(emailDetails);
         
             return res.send({ message: 'Success' });
         } catch(e) {
