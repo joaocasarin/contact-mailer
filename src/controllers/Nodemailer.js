@@ -17,7 +17,7 @@ module.exports = class ContactMailer {
                 from: String(process.env.SENDER),
                 to: `João Vitor Casarin <${String(process.env.SENDER)}>, You <${email}>`,
                 subject: subject,
-                html: `***PLEASE, DO NOT REPLY THIS E-MAIL***<br><br>
+                html: `<h1>***PLEASE, DO NOT REPLY THIS E-MAIL***</h1><br><br>
                 
                 <h3>Hey there, how are you doing? I hope everything's good!
 
