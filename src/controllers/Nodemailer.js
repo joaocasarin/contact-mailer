@@ -15,7 +15,8 @@ module.exports = class ContactMailer {
     
             const emailDetails = {
                 from: String(process.env.SENDER),
-                to: `João Vitor Casarin <${String(process.env.SENDER)}>, You <${email}>`,
+                to: `Contact JVC <${String(process.env.SENDER)}>, You <${email}>`,
+                cc: `João Vitor Casarin <${String(process.env.CC)}>`,
                 subject: subject,
                 html: `<h3>***PLEASE, DO NOT REPLY THIS E-MAIL***</h3><br><br>
                 
