@@ -15,6 +15,4 @@ app.use(express.urlencoded({ extended: true }));
 
 require('./src/routes/index')(app);
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server initialized. Try it on http://localhost:${process.env.PORT}`);
-});
+app.listen(process.env.PORT);
